@@ -141,5 +141,8 @@
       }
     }
   },
-  "defaultProject": "rangeSliderExample"
+  "defaultProject": "rangeSliderExample",
+  "cli": {
+    "analytics": "a12fc427-6e94-4b30-a2b2-d5ed62dcd6fb"
+  }
 }
