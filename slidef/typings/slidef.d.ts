@@ -5,18 +5,18 @@
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-import { Directionality } from '@angular/cdk/bidi';
+import { Directionality } from "@angular/cdk/bidi";
 import {
   ChangeDetectorRef,
   ElementRef,
   EventEmitter,
   OnDestroy,
   OnInit,
-  Renderer2
-} from '@angular/core';
-import { ControlValueAccessor } from '@angular/forms';
-import { CanColor, CanDisable, HammerInput } from '@angular/material/core';
-import { FocusMonitor } from '@angular/cdk/a11y';
+  Renderer2,
+} from "@angular/core";
+import { ControlValueAccessor } from "@angular/forms";
+import { CanColor, CanDisable, HammerInput } from "@angular/material/core";
+import { FocusMonitor } from "@angular/cdk/a11y";
 /**
  * Provider Expression that allows mat-slidef to register as a ControlValueAccessor.
  * This allows it to support [(ngModel)] and [formControl].
@@ -76,10 +76,10 @@ export declare class MatSlidef extends _MatSlidefMixinBase
    * How often to show ticks. Relative to the step so that a tick always appears on a step.
    * Ex: Tick interval of 4 with a step of 3 will draw a tick every 4 steps (every 12 values).
    */
-  tickInterval: 'auto' | number;
+  tickInterval: "auto" | number;
   private _tickInterval;
   /** @deprecated */
-  _tickIntervalDeprecated: number | 'auto';
+  _tickIntervalDeprecated: number | "auto";
   /** Value of the slidef. */
   value: any | null;
   private _value;
@@ -172,7 +172,7 @@ export declare class MatSlidef extends _MatSlidefMixinBase
     elementRef: ElementRef,
     _focusMonitor: FocusMonitor,
     _changeDetectorRef: ChangeDetectorRef,
-    _dir: Directionality
+    _dir: Directionality,
   );
   ngOnInit(): void;
   ngOnDestroy(): void;
